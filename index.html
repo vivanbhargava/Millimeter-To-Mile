@@ -1,0 +1,21 @@
+<html>
+    <head>
+    <title>Millimeter To Mile</title>
+</head>
+
+<body style="text-align: center; background: lightgreen; color: blue;">
+
+    <p>
+        <label>Millimeter</label>
+            <input id="inputmilli" type="number" placeholder="Millimeter" oninput="lengthorDistanceConverter(this.value)" onchange="lengthorDistanceConverter(this.value)">
+    </p>
+    <p>Mile: <span id="outputmile"></span></p>
+
+    <script>
+        function lengthorDistanceConverter(valNum) {
+            valNum = parseFloat(valNum);
+            document.getElementById("outputmile").innerHTML = valNum / 1.609e+6;
+        }
+    </script>
+
+</body></html>
